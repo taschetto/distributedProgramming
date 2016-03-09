@@ -65,11 +65,11 @@
   - É preciso garantir exclusão mútua no acesso a recursos compartilhados;
  - Transparência
   - Esconder a separação física de componentes de forma que o sistema seja como um sistema único;
-   - Acesso (recursos locais e remotos acessados da mesma forma);
-   - Localização;
-   - Acesso + localização = rede;
-   - Concorrência;
-   - Replicação;
-   - Falhas;
-   - Mobilidade;
-   - Escala;
+    - Acesso (recursos locais e remotos acessados da mesma forma);
+    - Localização;
+    - Acesso + localização = rede;
+    - Concorrência;
+    - Replicação;
+    - Falhas;
+    - Mobilidade;
+    - Escala;
