@@ -75,3 +75,4 @@
     - Delayed-write: modificações são escritas na cache do cliente e enviadas ao servidor mais tarde ou periodicamente; um bloco de escrita maior é mais eficiente do que várias pequenas;
     - Write-on-close: modificações são enviadas ao servidor quando o arquivo é fechado,; pressupõe uma semântica orientada à conexão, reduz tráfego intermediário enquanto o arquivo está aberto;
   - Delayed-write e Write-on-close permitem agrupadas escritas redundantes ou pequenas, mas tem baixa confiabilidade e dados não enviados ao servidor podem ser perdidos.
+3. Servidores Replicados ...
