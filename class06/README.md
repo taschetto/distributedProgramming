@@ -54,7 +54,16 @@
 
   - Tipos de ordenação
     - Ordenação absoluta: mensagens chegam na mesma ordem em que são enviadas
-      !(https://github.com/taschetto/distributedProgramming/blob/master/class06/img/ordenacaoabsoluta.png)
+      !(https://github.com/taschetto/distributedProgramming/blob/master/class06/img/ordenacaoabsoluta.png?raw=true)
     - Ordenação consistente ou total: mensagens são recebidas por todos na mesma ordem
-      !(https://github.com/taschetto/distributedProgramming/blob/master/class06/img/ordenacaoconsistente.png)
+      !(https://github.com/taschetto/distributedProgramming/blob/master/class06/img/ordenacaoconsistente.png?raw=true)
     - Ordenação causal: se o evento de envio de uma mensagem causa o evento de envio de outra mensagen, então estas mensagens são enviadas a todos os receptores na mesma ordem (m1 -> m3 : m3 causada por m1)
+
+# Implementação Absoluta
+
+- Método:
+  - Usar timestamps globais identificando todas as mensagens
+  - Exige relógios sincronizados
+  - Kernel do receptor mantém mensagens recebidas, mas deve considerar que uma mensagem com o maior atraso pode chegar com timestamp menor do que a 1ª da fila
+- Dificuldade: sincronizar relógios
+- Muitas aplicações **não** necessitam deste tipo de ordenação
