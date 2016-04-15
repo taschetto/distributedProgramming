@@ -54,11 +54,7 @@
 
   - Tipos de ordenação
     - Ordenação absoluta: mensagens chegam na mesma ordem em que são enviadas
-
-!(https://raw.githubusercontent.com/taschetto/distributedProgramming/master/class06/img/ordenacaoabsoluta.png)
-
+      !(https://github.com/taschetto/distributedProgramming/blob/master/class06/img/ordenacaoabsoluta.png)
     - Ordenação consistente ou total: mensagens são recebidas por todos na mesma ordem
-    
-!(https://raw.githubusercontent.com/taschetto/distributedProgramming/master/class06/img/ordenacaoconsistente.png)
-
+      !(https://github.com/taschetto/distributedProgramming/blob/master/class06/img/ordenacaoconsistente.png)
     - Ordenação causal: se o evento de envio de uma mensagem causa o evento de envio de outra mensagen, então estas mensagens são enviadas a todos os receptores na mesma ordem (m1 -> m3 : m3 causada por m1)
