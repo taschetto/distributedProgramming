@@ -58,6 +58,7 @@
     - Ordenação consistente ou total: mensagens são recebidas por todos na mesma ordem
       !(https://github.com/taschetto/distributedProgramming/blob/master/class06/img/ordenacaoconsistente.png?raw=true)
     - Ordenação causal: se o evento de envio de uma mensagem causa o evento de envio de outra mensagen, então estas mensagens são enviadas a todos os receptores na mesma ordem (m1 -> m3 : m3 causada por m1)
+      !(https://github.com/taschetto/distributedProgramming/blob/master/class06/img/ordenacaocausal.png?raw=true)
 
 # Implementação Absoluta
 
