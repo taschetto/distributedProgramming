@@ -76,11 +76,11 @@
     - Write-on-close: modificações são enviadas ao servidor quando o arquivo é fechado,; pressupõe uma semântica orientada à conexão, reduz tráfego intermediário enquanto o arquivo está aberto;
   - Delayed-write e Write-on-close permitem agrupadas escritas redundantes ou pequenas, mas tem baixa confiabilidade e dados não enviados ao servidor podem ser perdidos.
 3. Servidores Replicados
-4.  - Nelhora desempenho, escalabilidade e disponibilidade
-5.  - Tipos de servidor replicado:
-6.    - Máquinas de estados;
-7.    - Dados com operações de leitura e escrita;
-8.  - Políticas de Replicação:
-9.    - Passiva: clientes interagem com um servidor principal, e os outros servidores que estão na reserva são atualizados antes da resposta ao cliente;
-10.    -  Ativa: todos os servidores recebem os pedidos dos clientes, efetuam a operação, e decide-se por votação qual será a resposta final;
-11.    - Comunicação em grupo é usada muitas vezes para viabilizar a comunicação nesses sistemas;
+  - Nelhora desempenho, escalabilidade e disponibilidade
+  - Tipos de servidor replicado:
+    - Máquinas de estados;
+    - Dados com operações de leitura e escrita;
+  - Políticas de Replicação:
+    - Passiva: clientes interagem com um servidor principal, e os outros servidores que estão na reserva são atualizados antes da resposta ao cliente;
+    -  Ativa: todos os servidores recebem os pedidos dos clientes, efetuam a operação, e decide-se por votação qual será a resposta final;
+    - Comunicação em grupo é usada muitas vezes para viabilizar a comunicação nesses sistemas;
